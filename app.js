@@ -15,20 +15,46 @@ app.get('/1',function(req,res){
     res.header("Access-Control-Allow-Origin", "*")
     res.header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');   
 
-    res.send({"description":"Sample Cat","external_url":"https://gateway.pinata.cloud/ipfs/bafkreig4jr4n2g5lskaqlbusicbmdrruz34b4mczxit6b7ql4ffqzs66qm","image":"https://gateway.pinata.cloud/ipfs/bafkreig4jr4n2g5lskaqlbusicbmdrruz34b4mczxit6b7ql4ffqzs66qm","name":"Cat #1","attributes":[{"trait_type":"Background","value":"White"},{"trait_type":"EYE","value":"Golder"},{"trait_type":"Body","value":"Gray"},{"trait_type":"LOOK","value":"UP"}]})
+    res.send({
+        "description":"CATNFT",
+        "external_url":"https://ipfs.io/ipfs/Qme1kNc5BCPkAwZHFvXWch6EyED1fofNvkdpL1PJJEJoYZ",
+        "image":"https://ipfs.io/ipfs/Qme1kNc5BCPkAwZHFvXWch6EyED1fofNvkdpL1PJJEJoYZ",
+        "name":"Cat #1",
+        "attributes":
+            [
+                    {"trait_type":"Background","value":"White"},
+                    {"trait_type":"EYE","value":"Golder"},
+                    {"trait_type":"Body","value":"Gray"},
+                    {"trait_type":"LOOK","value":"UP"},
+                    {"trait_type":"SHAPE","value":"SQUARE"}
+            ]
+    })
 });
 
 app.get('/3',function(req,res){
     res.header("Access-Control-Allow-Origin", "*")
     res.header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');   
 
-    res.send({"Name":"Prince"})
+    res.send({"Name":"No NFT"})
 });
 app.get('/2',function(req,res){
     res.header("Access-Control-Allow-Origin", "*")
     res.header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');   
 
-    res.send({"description":"Sample Cat","external_url":"https://gateway.pinata.cloud/ipfs/bafkreihrbztzyelh7g74czln72wxwfakbf3ikgni4mpi4kx4dcpsit5okq","image":"https://gateway.pinata.cloud/ipfs/bafkreihrbztzyelh7g74czln72wxwfakbf3ikgni4mpi4kx4dcpsit5okq","name":"Cat #2","attributes":[{"trait_type":"Background","value":"Black"},{"trait_type":"EYE","value":"Dark"},{"trait_type":"Body","value":"Golden"},{"trait_type":"LOOK","value":"Straight"}]})
+    res.send({
+        "description":"CATNFT",
+        "external_url":"https://ipfs.io/ipfs/QmPqYVjRF5JDmmzt4mNDfXevXybeaCohTUgfSoczuQ7iLM",
+        "image":"https://ipfs.io/ipfs/QmPqYVjRF5JDmmzt4mNDfXevXybeaCohTUgfSoczuQ7iLM",
+        "name":"Cat #2",
+        "attributes":
+            [
+                    {"trait_type":"Background","value":"Gray"},
+                    {"trait_type":"EYE","value":"Black"},
+                    {"trait_type":"Body","value":"White"},
+                    {"trait_type":"LOOK","value":"Straight"},
+                    {"trait_type":"SHAPE","value":"RECTANGLE"}
+            ]
+    })
 });
 
 app.listen(process.env.PORT ||4000, function(){
