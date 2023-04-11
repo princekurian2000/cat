@@ -31,7 +31,7 @@ app.get('/1',function(req,res){
     })
 });
 
-app.get('/3',function(req,res){
+app.get('/',function(req,res){
     res.header("Access-Control-Allow-Origin", "*")
     res.header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');   
 
