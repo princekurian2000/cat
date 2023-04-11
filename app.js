@@ -57,6 +57,6 @@ app.get('/2',function(req,res){
     })
 });
 
-app.listen(process.env.PORT ||4000, function(){
-    console.log('listening to port 4000');
+app.listen(process.env.PORT ||3000, function(){
+    console.log('listening to port 3000');
 });
